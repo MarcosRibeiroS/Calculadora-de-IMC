@@ -45,8 +45,8 @@ public class MainActivity extends AppCompatActivity {
 
             public String calcularIMC() {
 
-                double peso = Double.parseDouble(editPeso.getText().toString());
-                double altura = Double.parseDouble(editAltura.getText().toString());
+                double peso = editPeso.getText().length()>0? Double.parseDouble(editPeso.getText().toString()):0;
+                double altura = editAltura.getText().length()>0? Double.parseDouble(editAltura.getText().toString()):0;
 
                 double resultado = peso / (altura * altura);
                 String texto = "Valores inválidos, tente novamente!";
