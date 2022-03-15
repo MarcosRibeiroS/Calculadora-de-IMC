@@ -49,7 +49,6 @@ public class MainActivity extends AppCompatActivity {
                 double altura = Double.parseDouble(editAltura.getText().toString());
 
                 double resultado = peso / (altura * altura);
-                /*IMC = peso/(altura*altura)*/
                 String texto = "Valores inválidos, tente novamente!";
                 if (resultado < 16)
                     texto = "Magreza grave";
